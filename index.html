@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear and Binary Search Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Linear and Binary Search Visualization</h1>
+        <div id="controls">
+            <input type="number" id="array-size" placeholder="Enter array size" min="1">
+            <input type="text" id="array-elements" placeholder="Enter array elements (comma separated)">
+            <input type="number" id="target" placeholder="Enter target value">
+            <div>
+                <button id="generate-array">Generate Array</button>
+                <button id="linear-search">Linear Search</button>
+                <button id="binary-search">Binary Search</button>
+                <button id="both-search">Both Search</button>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <div class="canvas-section-1" id="lin2">
+                <h2>Linear Search</h2>
+                <div class="canvas-wrapper">
+                    <div class="canvas-box" id="linear-container"></div>
+                </div>
+                <div class="steps-container" id="linear-steps-container"></div>
+            </div>
+            <div class="canvas-section-2" id="bin2">
+                <h2>Binary Search</h2>
+                <div class="canvas-wrapper">
+                    <div class="canvas-box" id="binary-container"></div>
+                </div>
+                <div class="steps-container" id="binary-steps-container"></div>
+                <div id="binary-warning" class="warning-text"></div>
+                <button id="sort-array" class="sort-button" style="display: none;">Sort Array</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
